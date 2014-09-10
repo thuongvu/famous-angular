@@ -93,16 +93,16 @@ cut. (<a href="guide/expression#-event-">Event object is available as <code>$eve
 {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 
 <div>
-  <a ng-click="openPlunkr('{{ relative }}examples/example-example13')" class="btn pull-right">
+  <a ng-click="openPlunkr('{{ relative }}examples/example-example15')" class="btn pull-right">
     <i class="glyphicon glyphicon-edit">&nbsp;</i>
     Edit in Plunker</a>
-  <div class="runnable-example" path="examples/example-example13"
+  <div class="runnable-example" path="examples/example-example15"
       
   >
 
    
 
-    <iframe class="runnable-example-frame" src="{{ relative }}examples/example-example13/index.html" name="example-example13"></iframe>
+    <iframe class="runnable-example-frame" src="{{ relative }}examples/example-example15/index.html" name="example-example15"></iframe>
   </div>
 </div>
 

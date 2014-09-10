@@ -15,11 +15,12 @@
 
   
 </head>
-<body ng-app="faInputExampleApp">
-  <fa-app ng-controller="ClickCtrl" id="app">
-    <fa-modifier fa-size="[300, 100]">
-      <fa-surface fa-background-color="'red'" ng-click="myClickHandler($event)">Click Me!  This has been clicked {{clicked}} times.</fa-surface>
-    </fa-modifier>
-  </fa-app>
+<body ng-app="faAppExampleApp">
+   <fa-app>
+   <fa-modifier>
+     <fa-surface>This will be shown on screen.</fa-surface>
+   </fa-modifier>
+   <div>This will not appear on screen because it is not inside an fa-surface.</div>
+ </fa-app>
 </body>
 </html>
