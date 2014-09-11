@@ -1,8 +1,6 @@
-angular.module('faInputExampleApp', ['famous.angular'])
-    .controller('ClickCtrl', ['$scope', function($scope) {
-      $scope.clicked = 0;
-      $scope.myClickHandler = function($event) {
-        console.log($event);
-        $scope.clicked++;
-      }; 
+angular.module('faFlipperExampleApp', ['famous.angular'])
+    .controller('FlipperCtrl', ['$scope', '$famous', function($scope, $famous) {
+      $scope.flipIt = function() {
+         $famous.find('fa-flipper')[0].flip();
+      };
   }]);

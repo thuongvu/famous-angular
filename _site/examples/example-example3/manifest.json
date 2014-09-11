@@ -2,6 +2,7 @@
   "name": "example-example3",
   "files": [
     "index.html",
-    "style.css"
+    "style.css",
+    "script.js"
   ]
 }

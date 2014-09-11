@@ -93,10 +93,10 @@ mouseover. (<a href="guide/expression#-event-">Event object is available as <cod
 {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 
 <div>
-  <a ng-click="openPlunkr('{{ relative }}examples/example-example6')" class="btn pull-right">
+  <a ng-click="openPlunkr('{{ relative }}examples/example-example7')" class="btn pull-right">
     <i class="glyphicon glyphicon-edit">&nbsp;</i>
     Edit in Plunker</a>
-  <div class="runnable-example" path="examples/example-example6"
+  <div class="runnable-example" path="examples/example-example7"
       
   >
 
@@ -114,7 +114,7 @@ mouseover. (<a href="guide/expression#-event-">Event object is available as <cod
     </div>
   
 
-    <iframe class="runnable-example-frame" src="{{ relative }}examples/example-example6/index.html" name="example-example6"></iframe>
+    <iframe class="runnable-example-frame" src="{{ relative }}examples/example-example7/index.html" name="example-example7"></iframe>
   </div>
 </div>
 

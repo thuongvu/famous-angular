@@ -455,14 +455,6 @@ it is inside of a <a href="../../../api/directive/faSurface/">fa-surface</a> dir
 <p>Declaring <code>fa-app</code> appends a div with the class of <code>&quot;famous-angular-container&quot;</code> to the DOM.  It then instantiates a Context via Famous&#39; Engine <code>.createContext()</code> method, passing in a reference to the <code>famous-angular-container</code> div, resulting in a Famous context that renderables can be added to connected to Angular.  <code>Fa-app</code> can be declared as an element or as an attribute within another element.  </p>
 
 
-<pre><code class="lang-html">&lt;fa-app style=&quot;width: 320px; height: 568px;&quot;&gt;
-  &lt;fa-modifier&gt;
-    &lt;fa-surface&gt;This will be shown on screen.&lt;/fa-surface&gt;
-  &lt;/fa-modifier&gt;
-  &lt;div&gt;This will not appear on screen because it is not inside an fa-surface.&lt;/div&gt;
-&lt;/fa-app&gt;</code></pre>
-
-
 <p>
 
 
@@ -533,19 +525,7 @@ it is inside of a <a href="../../../api/directive/faSurface/">fa-surface</a> dir
 <p>Nesting an <code>fa-app</code> within another <code>fa-app</code> is possible, and the use case of this approach would be for css content overflow.</p>
 
 
-<p>In the example below, there is an <code>fa-surface</code> with an <code>fa-app</code> nested inside.  Normally, an <code>fa-surface</code> should not nest another Famous element within it because it is a leaf node that has the purpose of being a container for html content.  The exception is nesting an <code>fa-app</code> within an <code>fa-surface</code>, which creates another Famous context, in which Famous elements can be nested inside.   </p>
-
-
-<pre><code class="lang-html">&lt;fa-app style=&quot;width: 500px; height: 500px;&quot;&gt;
-  &lt;fa-surface&gt;
-    &lt;fa-app style=&quot;width: 200px; height: 200px;&quot;&gt;
-      &lt;fa-image-surface 
-         fa-image-url=&quot;https://famo.us/assets/images/famous_logo_white.svg&quot; 
-         fa-size=&quot;[400, 400]&quot;&gt;
-      &lt;/fa-image-surface&gt;
-    &lt;/fa-app&gt;
-  &lt;/fa-surface&gt;
-&lt;/fa-app&gt;</code></pre>
+<p>In the example below, there is an <code>fa-surface</code> with an <code>fa-app</code> nested inside.  Normally, an <code>fa-surface</code> should not nest another Famous element within it because it is a leaf node that has the purpose of being a container for html content.  The exception is nesting an <code>fa-app</code> within an <code>fa-surface</code>, which creates another Famous context, in which Famous elements can be nested inside.</p>
 
 
 <p> 
@@ -573,7 +553,7 @@ it is inside of a <a href="../../../api/directive/faSurface/">fa-surface</a> dir
         type="html"
       
     >
-      <pre><code>  &lt;fa-app style=&quot;width: 500px; height: 500px;&quot;&gt;&#10;  &lt;fa-surface&gt;&#10;    &lt;fa-app style=&quot;width: 200px; height: 200px;&quot;&gt;&#10;      &lt;fa-image-surface &#10;         fa-image-url=&quot;https://famo.us/assets/images/famous_logo_white.svg&quot; &#10;         fa-size=&quot;[400, 400]&quot;&gt;&#10;      &lt;/fa-image-surface&gt;&#10;    &lt;/fa-app&gt;&#10;  &lt;/fa-surface&gt;&#10;&lt;/fa-app&gt;</code></pre>
+      <pre><code>&lt;fa-app style=&quot;width: 500px; height: 500px;&quot;&gt;&#10;  &lt;fa-surface&gt;&#10;    &lt;fa-app style=&quot;width: 200px; height: 200px;&quot;&gt;&#10;      &lt;fa-image-surface &#10;         fa-image-url=&quot;https://famo.us/assets/images/famous_logo_white.svg&quot; &#10;         fa-size=&quot;[400, 400]&quot;&gt;&#10;      &lt;/fa-image-surface&gt;&#10;    &lt;/fa-app&gt;&#10;  &lt;/fa-surface&gt;&#10;&lt;/fa-app&gt;</code></pre>
     </div>
   
     <div ng-non-bindable class="runnable-example-file"
@@ -585,7 +565,7 @@ it is inside of a <a href="../../../api/directive/faSurface/">fa-surface</a> dir
         type="css"
       
     >
-      <pre><code>  fa-app {&#10;  background-color: #000;  &#10;}</code></pre>
+      <pre><code>fa-app {&#10;  background-color: #000;  &#10;}</code></pre>
     </div>
   
     <div ng-non-bindable class="runnable-example-file"
