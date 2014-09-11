@@ -15,11 +15,14 @@
 
   
 </head>
-<body ng-app="faInputExampleApp">
-  <fa-app ng-controller="ClickCtrl" id="app">
-    <fa-modifier fa-size="[300, 100]">
-      <fa-surface fa-background-color="'red'" ng-click="myClickHandler($event)">Click Me!  This has been clicked {{clicked}} times.</fa-surface>
-    </fa-modifier>
+<body ng-app="faGridExampleApp">
+  <fa-app ng-controller="GridCtrl">
+  <fa-grid-layout fa-options="myGridLayoutOptions">
+     <fa-modifier ng-repeat="grid in grids"
+                  fa-size="[100, 100]">
+       <fa-surface fa-background-color="grid.bgColor"></fa-surface>
+     </fa-modifier>
+  </fa-grid-layout>
   </fa-app>
 </body>
 </html>

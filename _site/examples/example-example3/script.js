@@ -1,8 +1,10 @@
-angular.module('faInputExampleApp', ['famous.angular'])
-    .controller('ClickCtrl', ['$scope', function($scope) {
-      $scope.clicked = 0;
-      $scope.myClickHandler = function($event) {
-        console.log($event);
-        $scope.clicked++;
-      }; 
+angular.module('faGridExampleApp', ['famous.angular'])
+    .controller('GridCtrl', ['$scope', function($scope) {
+
+      $scope.myGridLayoutOptions = {
+         dimensions: [2,2], // specifies number of columns and rows
+      };
+
+      $scope.grids = [{bgColor: "orange"}, {bgColor: "red"}, {bgColor: "green"}, {bgColor: "yellow"}];
+
   }]);

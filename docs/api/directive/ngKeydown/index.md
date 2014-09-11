@@ -93,10 +93,10 @@ keydown. (Event object is available as <code>$event</code> and can be interrogat
 {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 
 <div>
-  <a ng-click="openPlunkr('{{ relative }}examples/example-example11')" class="btn pull-right">
+  <a ng-click="openPlunkr('{{ relative }}examples/example-example18')" class="btn pull-right">
     <i class="glyphicon glyphicon-edit">&nbsp;</i>
     Edit in Plunker</a>
-  <div class="runnable-example" path="examples/example-example11"
+  <div class="runnable-example" path="examples/example-example18"
       
   >
 
@@ -114,7 +114,7 @@ keydown. (Event object is available as <code>$event</code> and can be interrogat
     </div>
   
 
-    <iframe class="runnable-example-frame" src="{{ relative }}examples/example-example11/index.html" name="example-example11"></iframe>
+    <iframe class="runnable-example-frame" src="{{ relative }}examples/example-example18/index.html" name="example-example18"></iframe>
   </div>
 </div>
 

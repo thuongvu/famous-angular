@@ -93,10 +93,10 @@ a dblclick. (The Event object is available as <code>$event</code>)</p>
 {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 
 <div>
-  <a ng-click="openPlunkr('{{ relative }}examples/example-example4')" class="btn pull-right">
+  <a ng-click="openPlunkr('{{ relative }}examples/example-example11')" class="btn pull-right">
     <i class="glyphicon glyphicon-edit">&nbsp;</i>
     Edit in Plunker</a>
-  <div class="runnable-example" path="examples/example-example4"
+  <div class="runnable-example" path="examples/example-example11"
       
   >
 
@@ -126,7 +126,7 @@ a dblclick. (The Event object is available as <code>$event</code>)</p>
     </div>
   
 
-    <iframe class="runnable-example-frame" src="{{ relative }}examples/example-example4/index.html" name="example-example4"></iframe>
+    <iframe class="runnable-example-frame" src="{{ relative }}examples/example-example11/index.html" name="example-example11"></iframe>
   </div>
 </div>
 

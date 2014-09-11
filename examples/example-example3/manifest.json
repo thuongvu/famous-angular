@@ -2,7 +2,7 @@
   "name": "example-example3",
   "files": [
     "index.html",
-    "style.css",
-    "script.js"
+    "script.js",
+    "style.css"
   ]
 }

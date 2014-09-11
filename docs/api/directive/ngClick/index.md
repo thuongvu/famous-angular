@@ -69,10 +69,10 @@ this functionality will be lost.
 {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
 
 <div>
-  <a ng-click="openPlunkr('{{ relative }}examples/example-example3')" class="btn pull-right">
+  <a ng-click="openPlunkr('{{ relative }}examples/example-example10')" class="btn pull-right">
     <i class="glyphicon glyphicon-edit">&nbsp;</i>
     Edit in Plunker</a>
-  <div class="runnable-example" path="examples/example-example3"
+  <div class="runnable-example" path="examples/example-example10"
       
         module="faInputExampleApp"
       
@@ -116,7 +116,7 @@ this functionality will be lost.
     </div>
   
 
-    <iframe class="runnable-example-frame" src="{{ relative }}examples/example-example3/index.html" name="example-example3"></iframe>
+    <iframe class="runnable-example-frame" src="{{ relative }}examples/example-example10/index.html" name="example-example10"></iframe>
   </div>
 </div>
 

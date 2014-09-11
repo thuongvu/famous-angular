@@ -14,6 +14,8 @@
   
 </head>
 <body ng-app="">
-  
+   <fa-surface ng-mouseleave="count = count + 1" ng-init="count=0" style="cursor: pointer;">
+   Increment (when mouse leaves), count: {{count}}
+ </fa-surface>
 </body>
 </html>
