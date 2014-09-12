@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Example - example-example1</title>
+  <title>Example - example-example26</title>
   <link href="../../bower_components/famous-angular/dist/famous-angular.css" rel="stylesheet" type="text/css">
   <link href="style.css" rel="stylesheet" type="text/css">
   
@@ -15,16 +15,11 @@
 
   
 </head>
-<body ng-app="faAppExampleAppA">
-  <fa-app style="width: 500px; height: 500px;">
-    <fa-surface>
-      <fa-app style="width: 200px; height: 200px; overflow: hidden;">
-        <fa-image-surface 
-           fa-image-url="https://famo.us/assets/images/famous_logo_white.svg" 
-           fa-size="[400, 400]">
-        </fa-image-surface>
-      </fa-app>
-    </fa-surface>
+<body ng-app="faModifierExampleApp">
+  <fa-app>
+    <fa-modifier fa-origin="[.5,.5]" fa-size="[100, 100]" fa-rotate=".3">
+      <fa-surface fa-background-color="'red'"></fa-surface>
+    </fa-modifier>
   </fa-app>
 </body>
 </html>
